@@ -1,0 +1,32 @@
+<div class="widget">
+    <div class="widget-heading">
+        Total Builds
+    </div>
+    <div class="widget-body" fit-text=".build-summary-count > span" fit-text-max="40">
+        <div class="row">
+            <div class="col-xs-4">
+            <span class="badgeTotalBuild">{{buildView.totalBuildsYesterday}}</span>
+                <!-- <div class="build-summary-count">
+
+                    <span>{{buildView.totalBuildsYesterday}}</span>
+                </div> -->
+                <div class="build-summary-type">Today</div>
+            </div>
+            <div class="col-xs-4">
+                <!-- <div class="build-summary-count">
+                    <span>{{buildView.totalBuildsLastWeek}}</span>
+                </div> -->
+                <span class="badgeTotalBuild">{{buildView.totalBuildsLastWeek}}</span>
+                <div class="build-summary-type">Last<br/>17 Days</div>
+            </div>
+            <div class="col-xs-4">
+                <!-- <div class="build-summary-count">
+                    <span>{{buildView.totalBuildsLastMonth}}</span>
+                </div> -->
+                <span class="badgeTotalBuild">{{buildView.totalBuildsLastMonth}}</span>
+                <div class="build-summary-type">Last<br/>14 Days</div>
+            </div>
+
+        </div>
+    </div>
+</div>
