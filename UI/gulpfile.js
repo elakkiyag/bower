@@ -159,7 +159,7 @@ gulp.task('serve', ['build'], function() {
  *******************************/
 // delete our distribution folder
 gulp.task('clean', function() {
-    return gulp.src(hygieia.dist).pipe(clean());
+    /*return gulp.src(hygieia.dist).pipe(clean());*/
 });
 
 // move everything in the assets folder to distribution
@@ -182,7 +182,7 @@ gulp.task('themes', function() {
     // imported less file
     var widgetLessFiles = glob.sync('src/components/widgets/**/*.less', null);
     widgetLessFiles = widgetLessFiles.map(function(file) {
-        return "@import '" + file.replace(hygieia.src, '../../') + "';";
+        /*return "@import '" + file.replace(hygieia.src, '../../') + "';";*/
     });
 
     return gulp.src(themeFiles)
@@ -197,7 +197,7 @@ gulp.task('themes', function() {
             this.emit('end');
         })
         .pipe(minifyCss())
-        .pipe(gulp.dest(hygieia.dist + 'styles'));
+        /*.pipe(gulp.dest(hygieia.dist + 'styles'));*/
 });
 
 // move js files over
